@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cozy Creations</title>
+    <title>Shop Ively</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet"/>
 </head>
@@ -14,12 +14,96 @@
             <li><a href="{{ url_for('index') }}">Home</a></li>
             <li><a href="{{ url_for('shop') }}">Shop</a></li>
             <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2>Your cozy place for creative ideas!</h2>
-        <p>Welcome to the shop</p>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Item 1" class="product-image">
+                <div class="product-info">
+                    <h3>Handmade Mug</h3>
+                    <p class="product-price">$18.00</p>
+                    <p class="product-desc">A cozy, hand-thrown ceramic mug perfect for your morning coffee.</p>
+                    <p class="product-method">Purchase via Venmo: @cozycreations</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Item 2" class="product-image">
+                <div class="product-info">
+                    <h3>Knitted Blanket</h3>
+                    <p class="product-price">$45.00</p>
+                    <p class="product-desc">Soft, chunky knit blanket to keep you warm all winter.</p>
+                    <p class="product-method">Purchase via PayPal: cozycreations@gmail.com</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Item 2" class="product-image">
+                <div class="product-info">
+                    <h3>Knitted Blanket</h3>
+                    <p class="product-price">$45.00</p>
+                    <p class="product-desc">Soft, chunky knit blanket to keep you warm all winter.</p>
+                    <p class="product-method">Purchase via PayPal: cozycreations@gmail.com</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Item 2" class="product-image">
+                <div class="product-info">
+                    <h3>Knitted Blanket</h3>
+                    <p class="product-price">$45.00</p>
+                    <p class="product-desc">Soft, chunky knit blanket to keep you warm all winter.</p>
+                    <p class="product-method">Purchase via PayPal: cozycreations@gmail.com</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Item 2" class="product-image">
+                <div class="product-info">
+                    <h3>Knitted Blanket</h3>
+                    <p class="product-price">$45.00</p>
+                    <p class="product-desc">Soft, chunky knit blanket to keep you warm all winter.</p>
+                    <p class="product-method">Purchase via PayPal: cozycreations@gmail.com</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Item 2" class="product-image">
+                <div class="product-info">
+                    <h3>Knitted Blanket</h3>
+                    <p class="product-price">$45.00</p>
+                    <p class="product-desc">Soft, chunky knit blanket to keep you warm all winter.</p>
+                    <p class="product-method">Purchase via PayPal: cozycreations@gmail.com</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Item 2" class="product-image">
+                <div class="product-info">
+                    <h3>Knitted Blanket</h3>
+                    <p class="product-price">$45.00</p>
+                    <p class="product-desc">Soft, chunky knit blanket to keep you warm all winter.</p>
+                    <p class="product-method">Purchase via PayPal: cozycreations@gmail.com</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Item 2" class="product-image">
+                <div class="product-info">
+                    <h3>Knitted Blanket</h3>
+                    <p class="product-price">$45.00</p>
+                    <p class="product-desc">Soft, chunky knit blanket to keep you warm all winter.</p>
+                    <p class="product-method">Purchase via PayPal: cozycreations@gmail.com</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Item 2" class="product-image">
+                <div class="product-info">
+                    <h3>Knitted Blanket</h3>
+                    <p class="product-price">$45.00</p>
+                    <p class="product-desc">Soft, chunky knit blanket to keep you warm all winter.</p>
+                    <p class="product-method">Purchase via PayPal: cozycreations@gmail.com</p>
+                </div>
+            </div>
+        <!-- Add more product-card divs as needed -->
+    </div>
     </main>
     <footer class="footer">
         <p>&copy; 2025 Cozy Creations. All rights reserved.</p>

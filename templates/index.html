@@ -2,27 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cozy Creations</title>
+    <title>Ively Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet"/>
 </head>
 <body>
     <header>
         <div class="header-title">
-            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Cozy Creations Logo" class="logo">
-            <h1>Welcome to Cozy Creations</h1>
+            <!--<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Cozy Creations Logo" class="logo">-->
+            <h1>Welcome to Ively!!</h1>
         </div>
         <nav class="navbar">
             <ul>
             <li><a href="{{ url_for('index') }}">Home</a></li>
             <li><a href="{{ url_for('shop') }}">Shop</a></li>
             <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Your cozy place for creative ideas!</h2>
-        <p>Start exploring our collection or share your own creations.</p>
+         <section class="dictionary-entry">
+            <h2><span class="entry-word">Ively</span> <span class="entry-type">(f)</span></h2>
+            <p class="entry-pronunciation">/ˈaɪvli/</p>
+            <p class="entry-definition">
+            <strong>Definition:</strong> The influence of Ively makes you positive, self-assertive, and independent.
+            </p>
+            <ul class="entry-bullets">
+                <li>You can be creative, inventive, and ingenious in practical matters, such as handicrafts.</li>
+                <li>When you have the opportunity to pursue your own goals and interests free from interference, you can feel very agreeable and express a buoyant optimism.</li>
+            </ul>
+    </section>
+
+    <h2> A place to meet all your creative needs!</h2>
+    <p>Welcome to the home page of Ively, where creativity meets inspiration.</p>
+    <section class="features">
+        <h3>Features</h3>
+        <ul>
+            <li>Handcrafted items</li>
+            <li>Unique designs</li>
+            <li>Personalized gifts</li>
+        </ul>
+    </section>
+    <section class="testimonials">
+        <h3>What Our Customers Say</h3>
+        <blockquote>
+            "Ively has transformed my creative space! The products are top-notch and the service is exceptional." - Happy Customer
+        </blockquote>
+    </section>
+    <section class="contact">
+        <h3>Contact Us</h3>
+        <p>If you have any questions or need assistance, feel free to reach out!</p>
+        <p><a href="{{ url_for('contact') }}">Contact Us Here!</a></p>
     </main>
     <footer class="footer">
         <p>&copy; 2025 Cozy Creations. All rights reserved.</p>

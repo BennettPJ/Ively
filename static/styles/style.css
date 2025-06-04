@@ -1,33 +1,36 @@
+:root {
+    --cream: #fff5e9;
+    --olive: #58593f;
+    --sage: #949669;
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #2C273F;
-    color: #FFF57E;
+    background-color: var(--cream);
+    color: var(--olive);
 }
 
 /* Navbar */
 .navbar {
-    background-color: #2C273F;
+    background-color: var(--cream);
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(255, 188, 107, 0.2);
+    border-bottom: 2px solid var(--sage);
 }
 
 .navbar a {
-    color: #FFF57E;
+    color: var(--olive);
     text-decoration: none;
     margin: 0 1rem;
     font-weight: 600;
-    transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #FFBC6B;
+    color: var(--sage);
 }
-
-
 
 .navbar li {
     display: inline;
@@ -37,8 +40,9 @@ body {
 .header {
     text-align: center;
     padding: 4rem 1rem;
-    background: radial-gradient(circle at top left, #FFBC6B 0%, #2C273F 70%);
-    color: #FFD9DC;
+    background: var(--olive);
+    color: var(--cream);
+    border-bottom: 2px solid var(--sage);
 }
 
 .header h1 {
@@ -58,18 +62,19 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #2C273F;
-    color: #FCF89B;
+    background-color: var(--cream);
+    color: var(--olive);
     text-align: center;
     padding: 1.5rem 1rem;
-    border-top: 2px solid #FFBC6B;
+    border-top: 2px solid var(--sage);
     font-size: 0.9rem;
 }
 
 /* Buttons */
 .btn-glow {
-    background-color: #FFBC6B;
-    color: #2C273F;
+    background-color: var(--sage);
+    color: var(--cream);
+    cursor: pointer;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 50px;
@@ -80,7 +85,8 @@ body {
 
 .btn-glow:hover {
     transform: scale(1.05);
-    background-color: #FFF57E;
+    background-color: var(--olive);
+    color: var(--cream);
 }
 
 
@@ -92,23 +98,105 @@ body {
     gap: 0.5rem;
 }
 
+.dictionary-entry {
+    background: var(--cream);
+    border: 2px solid var(--sage);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    box-shadow: 0 2px 12px rgba(148, 150, 105, 0.07);
+}
+
+.entry-word {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--olive);
+}
+
+.entry-type {
+    font-size: 1.1rem;
+    color: var(--sage);
+    margin-left: 0.5rem;
+}
+
+.entry-pronunciation {
+    font-style: italic;
+    color: var(--sage);
+    margin-bottom: 0.5rem;
+}
+
+.entry-definition {
+    margin: 1rem 0 0.5rem 0;
+    color: var(--olive);
+}
+
+.entry-bullets {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: var(--olive);
+}
+
+.product-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+    padding: 2rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.product-card {
+    background: var(--cream);
+    border: 2px solid var(--sage);
+    border-radius: 16px;
+    min-width: 260px;
+    max-width: 280px;
+    flex: 0 0 auto;
+    box-shadow: 0 2px 12px rgba(148, 150, 105, 0.07);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.product-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.product-info h3 {
+    margin: 0.5rem 0 0.25rem 0;
+    color: var(--olive);
+}
+
+.product-price {
+    font-weight: bold;
+    color: var(--sage);
+    margin-bottom: 0.5rem;
+}
+
+.product-desc {
+    font-size: 0.95rem;
+    color: var(--olive);
+    margin-bottom: 0.5rem;
+}
+
+.product-method {
+    font-size: 0.9rem;
+    color: var(--sage);
+    background: #f8f8f8;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+}
+
 /*
-Midnight Purple
-#2C273F
-Backgrounds, Navbar
-Moon Yellow
-#FFF57E
-Highlights, Text, Accents
-Comet Orange Glow
-#FFBC6B
-Buttons, Links, Glow
-Soft Peach Pink
-#FFD9DC
-Cute icons (e.g. bunny)
-Star Light Yellow
-#FCF89B
-Decorative stars
-Fire Red Accent
-#FF6D6D
-Tiny accents/details
+Yellow moon main accent : #dcb382
+#e3cbab
+And then some greens 
+Light green: #c1c2a4
+Dark green #949669
 */
