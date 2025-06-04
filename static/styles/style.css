@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2C273F;
+    color: #FFF57E;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2C273F;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(255, 188, 107, 0.2);
+}
+
+.navbar a {
+    color: #FFF57E;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #FFBC6B;
+}
+
+
+
+.navbar li {
+    display: inline;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: radial-gradient(circle at top left, #FFBC6B 0%, #2C273F 70%);
+    color: #FFD9DC;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* space between image and text */
+}
+
+/* Footer */
+.footer {
+    background-color: #2C273F;
+    color: #FCF89B;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-top: 2px solid #FFBC6B;
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn-glow {
+    background-color: #FFBC6B;
+    color: #2C273F;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 0 12px rgba(255, 188, 107, 0.6);
+    transition: transform 0.2s ease;
+}
+
+.btn-glow:hover {
+    transform: scale(1.05);
+    background-color: #FFF57E;
+}
+
+
+.logo {
+    width: 48px;
+    height: 48px;
+    object-fit: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/*
+Midnight Purple
+#2C273F
+Backgrounds, Navbar
+Moon Yellow
+#FFF57E
+Highlights, Text, Accents
+Comet Orange Glow
+#FFBC6B
+Buttons, Links, Glow
+Soft Peach Pink
+#FFD9DC
+Cute icons (e.g. bunny)
+Star Light Yellow
+#FCF89B
+Decorative stars
+Fire Red Accent
+#FF6D6D
+Tiny accents/details
+*/
