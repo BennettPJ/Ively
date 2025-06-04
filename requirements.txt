@@ -1,0 +1,11 @@
+flask
+requests
+pillow
+numpy
+pandas
+stripe
+oauthlib
+google-auth
+google-auth-oauthlib
+Flask-OAuthlib
+Authlib
